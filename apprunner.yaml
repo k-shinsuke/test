@@ -7,7 +7,7 @@ build:
     - yum install -y php-cli
     
 run:
-  command: php index.php
-  network:
-    port: 8080
+  command: php -S 0.0.0.0:8080 index.php
+network:
+  port: 8080
     
