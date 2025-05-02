@@ -1,7 +1,13 @@
 version: 1.0
-runtime: php81
+runtime: php8.1
+
+build:
+  commands:
+    - apt-get update
+    -apt-get install -y php-cli
+    
 run:
-  command: "php -S 0.0.0.0:8080 -t /app"
+  command: php index.php
   network:
     port: 8080
     
