@@ -4,7 +4,7 @@ runtime: php8.1
 build:
   commands:
     - apt-get update
-    -apt-get install -y php-cli
+    - apt-get install -y php-cli
     
 run:
   command: php index.php
