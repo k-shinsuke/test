@@ -3,10 +3,10 @@ runtime: python311
 build:
   commands:
     build:
-      - python3 -m pip install -r requirements.txt
+      - python3.11 -m pip install -r requirements.txt
 run:
   runtime-version: 3.11.9
-  command: python3 index.py
+  command: python3.11 index.py
   network:
     port: 8080
     
