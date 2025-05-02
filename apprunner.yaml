@@ -4,7 +4,7 @@ runtime: php81
 build:
   commands:
     build:
-    - dnf install -y php-cli
+    - yum install -y php-cli
     
 run:
   command: php index.php
