@@ -1,8 +1,10 @@
 version: 1.0
-runtime: python311
+runtime: php81
+build:
+  commands:
+    build:
+      - echo "No build step"
 run:
-  runtime-version: 3.11.9
-  command: python index.py
+  command: php -S 0.0.0.0:8080 index.php
   network:
     port: 8080
-    
