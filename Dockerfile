@@ -14,4 +14,4 @@ RUN pip3 install -r requirements.txt
 EXPOSE 8080
 
 # アプリ起動
-CMD ["python", "index.py"]
+CMD ["python3.11", "index.py"]
