@@ -1,8 +1,9 @@
 version: 1.0
 runtime: python3
 build:
-  command: pip install -r requirements.txt
+  commands:
+    - pip install -r requirements.txt
 run:
-  command: python app.py
+  command: python index.py
   network:
     port: 8080
